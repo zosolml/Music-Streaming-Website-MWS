@@ -1,0 +1,86 @@
+{% extends "home.html" %}
+{% load i18n %}
+{% block content %}
+
+<div class="container">
+
+
+
+
+
+            <div class="data-content">
+              <div class="container">
+
+
+
+
+
+                <div id="img-1" class="tabcontent">
+                    <div class="blog-content">
+
+                      <div class="row">
+                        <div class="col-sm">
+
+
+                        <div class="card" style="width: 18rem;">
+                        <div class="img">
+                            <img  class="img-thumbnail" src="{{ post.img.url }}" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <div class="title">
+                            <p>{% trans 'Artist:' %} {{ post.artist }} </p><br>
+                            <p>{% trans 'Title:' %} {{ post.song_title }}</p><br>
+                            <p>{% trans 'Album:' %} {{ post.album }}</p><br>
+                            <p>{% trans 'Duration' %} {{ post.song_duration }}</p><br>
+                       </div>
+
+                            <audio controls>
+
+                              <source src='{{ post.song.url }}' type="audio/mpeg">
+                              Your browser does not support the audio element.
+                            </audio>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+</div>
+
+{% with comments.count as total_comments %}
+  <h2>
+    {{ total_comments }} comment{{ total_comments|pluralize }}
+  </h2>
+{% endwith %}
+
+{% for comment in comments %}
+  <div class="comment">
+    <p class="info">
+      Comment {{ forloop.counter }} by {{ comment.name }}
+      {{ comment.created }}
+    </p>
+    {{ comment.body|linebreaks }}
+  </div>
+{% empty %}
+  <p>There are no comments yet.</p>
+{% endfor %}
+
+{% if new_comment %}
+  <h2>Your comment has been added.</h2>
+{% else %}
+  <h2>Add a new comment</h2>
+  <form method="post">
+    {{ comment_form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Add comment"></p>
+
+</form>
+  {% endif %}
+
+
+
+
+{% endblock %}

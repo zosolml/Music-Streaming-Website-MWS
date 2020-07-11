@@ -1,0 +1,17 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="container">
+
+
+{% for post in posts %}
+<a href="{{ post.get_absolute_url }}">{{post.song_title}} by {{post.artist}} from {{post.album}}</a><br>
+{% endfor %}
+</div>
+<div class="container">
+
+
+  {% include "pagination.html" with page=page_obj %}
+
+
+  </div>
+{% endblock %}
