@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-08 19:54+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\home.html:24
+msgid "Home"
+msgstr "বাড়ি"
+
+#: .\templates\home.html:25
+msgid "Register"
+msgstr "নিবন্ধন"
+
+#: .\templates\home.html:26
+msgid "About"
+msgstr "আমাদের সম্পর্কে"
+
+#: .\templates\home.html:27 .\templates\home.html:55
+msgid "Sign in"
+msgstr "সাইন ইন করুন"
+
+#: .\templates\home.html:28
+msgid "Contact"
+msgstr "যোগাযোগ"
+
+#: .\templates\home.html:53
+msgid "logout"
+msgstr "প্রস্থান"
+
+#: .\templates\home.html:58
+msgid "Sign up"
+msgstr "নিবন্ধন করুন"
+
+#: .\templates\home.html:66
+msgid "Genre"
+msgstr "রীতি"
+
+#: .\templates\home.html:120
+msgid "Artist:"
+msgstr "শিল্পী"
+
+#: .\templates\home.html:121
+msgid "Title:"
+msgstr "শিরোনাম"
+
+#: .\templates\home.html:122
+msgid "Album:"
+msgstr "অ্যালবাম"
+
+#: .\templates\home.html:123
+msgid "Duration"
+msgstr "স্থিতিকাল"
+
+#: .\templates\login.html:17
+#, fuzzy
+#| msgid "UserName"
+msgid "Username"
+msgstr "ব্যবহারকারীর নাম"
+
+#: .\templates\login.html:19
+#, fuzzy
+#| msgid "password"
+msgid "Password"
+msgstr "পাসওয়ার্ড"
+
+#: .\templates\register.html:20
+msgid "First Name"
+msgstr "নামের প্রথম অংশ"
+
+#: .\templates\register.html:22
+msgid "Last Name"
+msgstr "নামের শেষাংশ"
+
+#: .\templates\register.html:24
+msgid "UserName"
+msgstr "ব্যবহারকারীর নাম"
+
+#: .\templates\register.html:26
+msgid "Email"
+msgstr "ইমেইল"
+
+#: .\templates\register.html:28
+msgid "password"
+msgstr "পাসওয়ার্ড"
+
+#: .\templates\register.html:30
+msgid "confirm-password"
+msgstr "নিশ্চিত-পাসওয়ার্ড"
